@@ -4,67 +4,36 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Patrick (Mohsen) Pashna | Data Analytics Portfolio</title>
-   <!-- Open Graph / LinkedIn / Slack preview -->
+
+  <!-- Open Graph / social preview (keep if you added preview.png) -->
   <meta property="og:title" content="Patrick Pashna — Data Analytics Portfolio">
   <meta property="og:description" content="Tableau, Power BI, Python, and SQL projects.">
   <meta property="og:url" content="https://patrick-pashna.github.io">
   <meta property="og:type" content="website">
-  <!-- Make sure preview.png is uploaded to the repo root -->
   <meta property="og:image" content="https://patrick-pashna.github.io/preview.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Patrick Pashna — Data Analytics Portfolio">
+  <meta name="twitter:description" content="Tableau, Power BI, Python, and SQL projects.">
+  <meta name="twitter:image" content="https://patrick-pashna.github.io/preview.png">
+
   <style>
-    :root {
-      --brand: #f37021;   /* accent (OSU orange vibe) */
-      --ink:   #1e293b;   /* text color */
-      --muted: #64748b;   /* secondary text */
-      --bg:    #f6f7fb;   /* page background */
-      --card:  #ffffff;   /* panel background */
-      --line:  #e5e7eb;   /* borders */
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: var(--bg);
-      color: var(--ink);
-      line-height: 1.6;
-    }
-    header {
-      background: var(--card);
-      border-bottom: 1px solid var(--line);
-    }
-    .wrap { max-width: 1100px; margin: 0 auto; padding: 24px 18px; }
-    .hero h1 { margin: 0 0 6px; color: var(--brand); font-size: 28px; }
-    .hero p  { margin: 0; color: var(--muted); }
-    main .section {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 18px;
-      margin: 20px auto;
-    }
-    h2 {
-      margin: 0 0 10px;
-      color: var(--brand);
-      font-size: 22px;
-      font-weight: 700;
-    }
-    p { margin: 8px 0 14px; color: var(--ink); }
-    .links { display: grid; gap: 10px; }
-    .linkrow {
-      display: flex; justify-content: space-between; align-items: center;
-      border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; background: #fff;
-    }
-    .linkrow small { color: var(--muted); }
-    a { color: var(--brand); text-decoration: none; font-weight: 600; }
-    a:hover { text-decoration: underline; }
-    .hint { color: var(--muted); font-size: 14px; }
-    iframe, .tableauPlaceholder { width: 100%; height: 65vh; border: none; border-radius: 10px; }
-    footer {
-      background: #0b1220; color: #cbd5e1; text-align: center; padding: 18px; margin-top: 24px;
-    }
-    footer a { color: #93c5fd; }
+    :root { --brand:#f37021; --ink:#1e293b; --muted:#64748b; --bg:#f6f7fb; --card:#fff; --line:#e5e7eb; }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+    header{background:var(--card);border-bottom:1px solid var(--line)}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px 18px}
+    .hero h1{margin:0 0 6px;color:var(--brand);font-size:28px}
+    .hero p{margin:0;color:var(--muted)}
+    .section{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;margin:20px auto}
+    h2{margin:0 0 10px;color:var(--brand);font-size:22px;font-weight:700}
+    .links{display:grid;gap:10px}
+    .linkrow{display:flex;justify-content:space-between;align-items:center;border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:#fff}
+    .linkrow small{color:var(--muted)}
+    a{color:var(--brand);text-decoration:none;font-weight:600}
+    a:hover{text-decoration:underline}
+    iframe,.tableauPlaceholder{width:100%;height:65vh;border:none;border-radius:10px}
+    footer{background:#0b1220;color:#cbd5e1;text-align:center;padding:18px;margin-top:24px}
+    footer a{color:#93c5fd}
   </style>
 </head>
 <body>
@@ -73,76 +42,56 @@
   <div class="wrap hero">
     <h1>Patrick (Mohsen) Pashna</h1>
     <p>Data & Analytics • Tableau • Power BI • Python • SQL — Oklahoma State University</p>
-    <p>
-      <a href="mailto:mpashna@okstate.edu">mpashna@okstate.edu</a> |
-      <a href="https://www.linkedin.com/in/patrickpashna/">LinkedIn</a>
-    </p>
+    <p><a href="mailto:mpashna@okstate.edu">mpashna@okstate.edu</a> | <a href="https://www.linkedin.com/in/patrickpashna/">LinkedIn</a></p>
   </div>
 </header>
 
 <main class="wrap">
 
-  <!-- TABLEAU -->
+  <!-- ===== TABLEAU ===== -->
   <section class="section">
     <h2>Tableau Dashboards</h2>
-    <p class="hint">
-      Add links to your Tableau Public dashboards below. You can also embed a live dashboard
-      by pasting the Tableau “Share → Embed code” in place of the commented block.
-    </p>
-
-    <!-- Links list you can edit -->
     <div class="links" id="tableau-links">
-      <!-- EXAMPLE PLACEHOLDER ROWS (replace with your own or delete) -->
-      <!-- <div class="linkrow"><span>Profit by State</span><a href="YOUR_TABLEAU_PUBLIC_LINK">Open →</a></div> -->
+      <!-- Add Tableau project links like this: -->
+      <!-- <div class="linkrow"><span>Profit by State</span><a href="YOUR_TABLEAU_PUBLIC_URL">Open →</a></div> -->
     </div>
 
-    <!-- Optional: embed one featured Tableau viz -->
+    <!-- Optional: embed one featured Tableau viz (paste your Embed code here) -->
     <!--
-    <div style="margin-top:12px">
-      <div class="tableauPlaceholder">
-        <object class="tableauViz">
-          <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
-          <param name="name" value="YOUR_WORKBOOK_NAME/YOUR_DASHBOARD_NAME" />
-          <param name="tabs" value="no" />
-          <param name="toolbar" value="yes" />
-        </object>
-      </div>
-      <script src="https://public.tableau.com/javascripts/api/tableau.v1.js"></script>
+    <div class="tableauPlaceholder">
+      <object class="tableauViz">
+        <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+        <param name="name" value="YOUR_WORKBOOK/YOUR_DASHBOARD" />
+        <param name="tabs" value="no" /><param name="toolbar" value="yes" />
+      </object>
     </div>
+    <script src="https://public.tableau.com/javascripts/api/tableau.v1.js"></script>
     -->
   </section>
 
-  <!-- POWER BI -->
+  <!-- ===== POWER BI ===== -->
   <section class="section">
     <h2>Power BI Dashboards</h2>
-    <p class="hint">
-      Paste your “Publish to web” URLs as links (or embed them with an iframe). Do not use “Publish to web” for confidential data.
-    </p>
-
     <div class="links" id="powerbi-links">
-      <!-- Add rows like this: -->
       <!-- <div class="linkrow"><span>Sales & Margin Overview</span><a href="https://app.powerbi.com/view?r=YOUR_TOKEN">Open →</a></div> -->
     </div>
-
-    <!-- Optional embed (uncomment and insert your link) -->
+    <!-- Optional embed (Publish to web URL): -->
     <!-- <iframe src="https://app.powerbi.com/view?r=YOUR_TOKEN" allowfullscreen></iframe> -->
   </section>
 
-  <!-- PYTHON -->
+  <!-- ===== PYTHON ===== -->
   <section class="section">
     <h2>Python Projects</h2>
-    <p class="hint">Link to your GitHub repos or notebooks.</p>
     <div class="links" id="python-links">
-      <!-- <div class="linkrow"><span>Project Title</span><a href="https://github.com/Patrick-pashna/REPO_NAME">Repo →</a></div> -->
+      <!-- <div class="linkrow"><span>Churn Analysis</span><a href="https://github.com/Patrick-pashna/REPO_NAME">Repo →</a></div> -->
     </div>
   </section>
 
-  <!-- SQL -->
+  <!-- ===== SQL ===== -->
   <section class="section">
     <h2>SQL Projects</h2>
-    <p class="hint">Link to repos or single .sql files in GitHub.</p>
     <div class="links" id="sql-links">
-      <!-- <div class="linkrow"><span>Customer Cohorts & LTV</span><a href="https://github.com/Patrick-pashna/sql-projects/path.sql">Open →</a></div> -->
+      <!-- <div class="linkrow"><span>Customer Cohorts & LTV</span><a href="https://github.com/Patrick-pashna/sql-projects/PATH.sql">Open →</a></div> -->
     </div>
   </section>
 
