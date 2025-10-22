@@ -6,87 +6,141 @@
   <title>Patrick (Mohsen) Pashna | Data Analytics Portfolio</title>
   <style>
     :root {
-      --orange: #f37021;
-      --dark: #1e293b;
-      --gray: #64748b;
-      --light: #f8fafc;
-      --white: #ffffff;
+      --brand: #f37021;   /* accent (OSU orange vibe) */
+      --ink:   #1e293b;   /* text color */
+      --muted: #64748b;   /* secondary text */
+      --bg:    #f6f7fb;   /* page background */
+      --card:  #ffffff;   /* panel background */
+      --line:  #e5e7eb;   /* borders */
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      background: var(--light);
-      color: var(--dark);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
       line-height: 1.6;
     }
     header {
-      background: var(--white);
-      border-bottom: 1px solid #e2e8f0;
-      padding: 1.5rem;
-      text-align: center;
+      background: var(--card);
+      border-bottom: 1px solid var(--line);
     }
-    h1 { color: var(--orange); margin-bottom: 0.2rem; }
-    h2 { color: var(--orange); margin-top: 2rem; }
-    a { color: var(--orange); text-decoration: none; }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 24px 18px; }
+    .hero h1 { margin: 0 0 6px; color: var(--brand); font-size: 28px; }
+    .hero p  { margin: 0; color: var(--muted); }
+    main .section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 18px;
+      margin: 20px auto;
+    }
+    h2 {
+      margin: 0 0 10px;
+      color: var(--brand);
+      font-size: 22px;
+      font-weight: 700;
+    }
+    p { margin: 8px 0 14px; color: var(--ink); }
+    .links { display: grid; gap: 10px; }
+    .linkrow {
+      display: flex; justify-content: space-between; align-items: center;
+      border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; background: #fff;
+    }
+    .linkrow small { color: var(--muted); }
+    a { color: var(--brand); text-decoration: none; font-weight: 600; }
     a:hover { text-decoration: underline; }
-    section {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 1.5rem;
-      background: var(--white);
-      border-radius: 10px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-      margin-top: 1.5rem;
-    }
+    .hint { color: var(--muted); font-size: 14px; }
+    iframe, .tableauPlaceholder { width: 100%; height: 65vh; border: none; border-radius: 10px; }
     footer {
-      text-align: center;
-      padding: 1.5rem;
-      background: var(--dark);
-      color: #cbd5e1;
-      margin-top: 2rem;
+      background: #0b1220; color: #cbd5e1; text-align: center; padding: 18px; margin-top: 24px;
     }
+    footer a { color: #93c5fd; }
   </style>
 </head>
-
 <body>
 
 <header>
-  <h1>Patrick (Mohsen) Pashna</h1>
-  <p>Graduate Teaching Assistant | MS Business Analytics & Data Science | Oklahoma State University</p>
-  <p><a href="mailto:mpashna@okstate.edu">mpashna@okstate.edu</a> |
-     <a href="https://www.linkedin.com/in/patrickpashna/">LinkedIn</a></p>
+  <div class="wrap hero">
+    <h1>Patrick (Mohsen) Pashna</h1>
+    <p>Data & Analytics • Tableau • Power BI • Python • SQL — Oklahoma State University</p>
+    <p>
+      <a href="mailto:mpashna@okstate.edu">mpashna@okstate.edu</a> |
+      <a href="https://www.linkedin.com/in/patrickpashna/">LinkedIn</a>
+    </p>
+  </div>
 </header>
 
-<main>
+<main class="wrap">
 
-  <section>
-    <h2>📊 Tableau Dashboards</h2>
-    <p>Use this section to add your Tableau Public dashboards. When ready, paste your embed code or link below.</p>
-    <!-- Example: <iframe src="https://public.tableau.com/views/YourDashboardName"></iframe> -->
+  <!-- TABLEAU -->
+  <section class="section">
+    <h2>Tableau Dashboards</h2>
+    <p class="hint">
+      Add links to your Tableau Public dashboards below. You can also embed a live dashboard
+      by pasting the Tableau “Share → Embed code” in place of the commented block.
+    </p>
+
+    <!-- Links list you can edit -->
+    <div class="links" id="tableau-links">
+      <!-- EXAMPLE PLACEHOLDER ROWS (replace with your own or delete) -->
+      <!-- <div class="linkrow"><span>Profit by State</span><a href="YOUR_TABLEAU_PUBLIC_LINK">Open →</a></div> -->
+    </div>
+
+    <!-- Optional: embed one featured Tableau viz -->
+    <!--
+    <div style="margin-top:12px">
+      <div class="tableauPlaceholder">
+        <object class="tableauViz">
+          <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+          <param name="name" value="YOUR_WORKBOOK_NAME/YOUR_DASHBOARD_NAME" />
+          <param name="tabs" value="no" />
+          <param name="toolbar" value="yes" />
+        </object>
+      </div>
+      <script src="https://public.tableau.com/javascripts/api/tableau.v1.js"></script>
+    </div>
+    -->
   </section>
 
-  <section>
-    <h2>📈 Power BI Dashboards</h2>
-    <p>Add your Power BI “Publish to web” report links or short descriptions here.</p>
-    <!-- Example: <iframe src="https://app.powerbi.com/view?r=YourEmbedCode"></iframe> -->
+  <!-- POWER BI -->
+  <section class="section">
+    <h2>Power BI Dashboards</h2>
+    <p class="hint">
+      Paste your “Publish to web” URLs as links (or embed them with an iframe). Do not use “Publish to web” for confidential data.
+    </p>
+
+    <div class="links" id="powerbi-links">
+      <!-- Add rows like this: -->
+      <!-- <div class="linkrow"><span>Sales & Margin Overview</span><a href="https://app.powerbi.com/view?r=YOUR_TOKEN">Open →</a></div> -->
+    </div>
+
+    <!-- Optional embed (uncomment and insert your link) -->
+    <!-- <iframe src="https://app.powerbi.com/view?r=YOUR_TOKEN" allowfullscreen></iframe> -->
   </section>
 
-  <section>
-    <h2>💻 Python Projects</h2>
-    <p>Add links to your GitHub repositories or Jupyter notebooks here.</p>
-    <!-- Example: <a href="https://github.com/Patrick-pashna/sales-forecast">Sales Forecasting Model</a> -->
+  <!-- PYTHON -->
+  <section class="section">
+    <h2>Python Projects</h2>
+    <p class="hint">Link to your GitHub repos or notebooks.</p>
+    <div class="links" id="python-links">
+      <!-- <div class="linkrow"><span>Project Title</span><a href="https://github.com/Patrick-pashna/REPO_NAME">Repo →</a></div> -->
+    </div>
   </section>
 
-  <section>
-    <h2>🧮 SQL Projects</h2>
-    <p>List your SQL analysis or data modeling projects here with links to GitHub files.</p>
+  <!-- SQL -->
+  <section class="section">
+    <h2>SQL Projects</h2>
+    <p class="hint">Link to repos or single .sql files in GitHub.</p>
+    <div class="links" id="sql-links">
+      <!-- <div class="linkrow"><span>Customer Cohorts & LTV</span><a href="https://github.com/Patrick-pashna/sql-projects/path.sql">Open →</a></div> -->
+    </div>
   </section>
 
 </main>
 
 <footer>
-  <p>© 2025 Patrick (Mohsen) Pashna | Built with GitHub Pages</p>
+  © 2025 Patrick (Mohsen) Pashna • Built with GitHub Pages
 </footer>
 
 </body>
